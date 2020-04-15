@@ -42,11 +42,11 @@ class Scraper
       if link.include?("twitter")
         student_hash[:twitter] = link
       elsif link.include?("linkedin")
-        students_hash[:linkedin] = link
+        student_hash[:linkedin] = link
       elsif link.include?("github")
-        students_hash[:github] = link
+        student_hash[:github] = link
       else
-        students_hash[:blog] = link
+        student_hash[:blog] = link
       end
     end
     student_hash
