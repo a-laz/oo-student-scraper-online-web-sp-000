@@ -48,8 +48,8 @@ class Scraper
       else
         students_hash[:blog] => link
       end
-    end  
-        
+    end
+
     student_hash
     #binding.pry
   end
