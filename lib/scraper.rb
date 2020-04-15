@@ -10,7 +10,7 @@ class Scraper
     #Student Name
     doc.css(".student-card .card-text-container h4").map {|name| name.text}
     #Student Location
-    doc.css(".student-card .card-text-container p").map {||location| location.text}
+    doc.css(".student-card .card-text-container p").map {|location| location.text}
     binding.pry
   end
 
