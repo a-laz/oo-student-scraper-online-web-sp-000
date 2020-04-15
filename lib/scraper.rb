@@ -43,7 +43,7 @@ class Scraper
       :bio => doc.css(".description-holder p").text
     }
     student_hash
-    binding.pry
+    #binding.pry
   end
 
 end
