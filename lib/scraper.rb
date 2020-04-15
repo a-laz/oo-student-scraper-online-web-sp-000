@@ -22,7 +22,7 @@ class Scraper
       }
       students << student_card
     end
-    binding.pry
+    students
   end
 
   def self.scrape_profile_page(profile_url)
