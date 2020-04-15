@@ -40,13 +40,13 @@ class Scraper
     }
     links.each do |link|
       if link.include?("twitter")
-        student_hash[:twitter] => link
+        student_hash[:twitter] = link
       elsif link.include?("linkedin")
-        students_hash[:linkedin] => link
+        students_hash[:linkedin] = link
       elsif link.include?("github")
-        students_hash[:github] => github
+        students_hash[:github] = link
       else
-        students_hash[:blog] => link
+        students_hash[:blog] = link
       end
     end
     student_hash
