@@ -30,8 +30,8 @@ class Scraper
     doc = Nokogiri::HTML(open(profile_url))
     #Twitter, linkedin, github, and blog
     #doc.css(".social-icon-container a").map {|link| link['href']}
-    
-      
+
+
     binding.pry
   end
 
