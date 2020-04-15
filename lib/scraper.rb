@@ -31,7 +31,7 @@ class Scraper
     #Twitter
     #doc.css(".social-icon-container a").attribute("href").value
     #linkedin
-    doc.css(".social-icon-container a").second
+    doc.css(".social-icon-container a")
     binding.pry
   end
 
