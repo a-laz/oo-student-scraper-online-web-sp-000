@@ -8,9 +8,9 @@ class Scraper
     #Student URL
     doc.css(".student-card a").map { |link| link['href'] }
     #Student Name
-    
+
     #Student Location
-    
+
     binding.pry
   end
 
