@@ -35,7 +35,7 @@ class Scraper
     #bio
     #doc.css(".description-holder p").text
     student_hash = {
-      :profile_quote => doc.css(".vitals-text-container div").text
+      :profile_quote => doc.css(".vitals-text-container div").text,
       :bio => doc.css(".description-holder p").text
     }
     links.each do |link|
