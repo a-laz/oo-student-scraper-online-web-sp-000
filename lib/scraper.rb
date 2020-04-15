@@ -49,7 +49,6 @@ class Scraper
         students_hash[:blog] => link
       end
     end
-
     student_hash
     #binding.pry
   end
