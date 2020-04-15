@@ -8,7 +8,7 @@ class Scraper
     #Student URL
     doc.css(".student-card a").map { |link| link['href'] }
     #Student Name
-
+    doc.css(".student-card .card-text-container h4").text.map {|name| name}
     #Student Location
 
     binding.pry
