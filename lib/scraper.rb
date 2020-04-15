@@ -28,10 +28,10 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open(profile_url))
-    #Twitter
-    #doc.css(".social-icon-container a").attribute("href").value
-    #linkedin
-    doc.css(".social-icon-container a")
+    #Twitter, linkedin, github, and blog
+    #doc.css(".social-icon-container a").map {|link| link['href']}
+    
+      
     binding.pry
   end
 
