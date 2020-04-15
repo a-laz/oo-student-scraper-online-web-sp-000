@@ -35,10 +35,10 @@ class Scraper
     #bio
     #doc.css(".description-holder p").text
     student_hash = {
-      :twitter => links[0],
-      :linkedin => links[1],
-      :github => links[2],
-      :blog => links[3],
+      :twitter => links[0] unless links[0] == nil,
+      :linkedin => links[1] unless links[0] == nil,
+      :github => links[2] unless links[0] == nil,
+      :blog => links[3] unless links[0] == nil,
       :profile_quote => doc.css(".vitals-text-container div").text,
       :bio => doc.css(".description-holder p").text
     }
