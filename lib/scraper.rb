@@ -42,6 +42,7 @@ class Scraper
       :profile_quote => doc.css(".vitals-text-container div").text,
       :bio => doc.css(".description-holder p").text
     }
+    student_hash
     binding.pry
   end
 
