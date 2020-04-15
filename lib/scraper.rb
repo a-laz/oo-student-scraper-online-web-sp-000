@@ -35,13 +35,21 @@ class Scraper
     #bio
     #doc.css(".description-holder p").text
     student_hash = {
-      :twitter => links[0],
-      :linkedin => links[1],
-      :github => links[2],
-      :blog => links[3],
-      :profile_quote => doc.css(".vitals-text-container div").text,
+      :profile_quote => doc.css(".vitals-text-container div").text
       :bio => doc.css(".description-holder p").text
     }
+    links.each do |link|
+      if link.include?("twitter")
+        student_hash[:twitter] => link
+      elsif link.include?("linkedin")
+        students_hash[:linkedin] => link
+      elsif link.include?("github")
+        students_hash[:github] => github
+      else
+        students_hash[:blog] => link
+      end
+    end  
+        
     student_hash
     #binding.pry
   end
