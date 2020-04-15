@@ -31,7 +31,9 @@ class Scraper
     #Twitter, linkedin, github, and blog
     #links = doc.css(".social-icon-container a").map {|link| link['href']}
     #profile_quote
-    doc.css(".vitals-text-container div").text
+    #doc.css(".vitals-text-container div").text
+    #bio
+    #doc.css(".description-holder p").text
 
     binding.pry
   end
