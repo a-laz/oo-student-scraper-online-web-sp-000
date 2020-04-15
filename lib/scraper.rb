@@ -29,8 +29,9 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open(profile_url))
     #Twitter, linkedin, github, and blog
-    #doc.css(".social-icon-container a").map {|link| link['href']}
-
+    #links = doc.css(".social-icon-container a").map {|link| link['href']}
+    #profile_quote
+    doc.css(".vitals-text-container .profile_quote").text
 
     binding.pry
   end
