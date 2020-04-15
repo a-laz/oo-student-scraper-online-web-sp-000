@@ -5,6 +5,8 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     doc = Nokogiri::HTML(open(index_url))
+    #Student
+    #doc.css(".student-card")
     #Student URL
     #doc.css(".student-card a").map { |link| link['href'] }
     #Student Name
